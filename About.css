@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(193, 228, 233);
+}
+h1 {
+    font-family: Franklin Gothic Medium;
+    font-size: 300%; 
+    text-align: center;
+}
+p {
+    font-family: helvetica;
+    text-align: center;
+}
