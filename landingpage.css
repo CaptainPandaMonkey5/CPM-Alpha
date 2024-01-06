@@ -6,11 +6,6 @@ h1 {
     font-family: monospace;
     font-size: 300%;
 }
-h3 {
-    font-family: Monospace;
-    font-size: 200%;
-    text-align: center;
-}
 .button{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
