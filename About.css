@@ -5,6 +5,8 @@ h1 {
     font-family: Franklin Gothic Medium;
     font-size: 300%; 
     text-align: center;
+    background-image: url(Hand-in-water.jpg);
+    background-size: cover;
 }
 p {
     font-family: helvetica;
