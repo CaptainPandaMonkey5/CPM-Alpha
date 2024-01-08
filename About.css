@@ -12,3 +12,12 @@ p {
   font-family: helvetica;
   text-align: center;
 }
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  border-collapse: collapse;
+  border-style: none;
+}
