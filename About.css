@@ -21,3 +21,24 @@ td {
   border-collapse: collapse;
   border-style: none;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+}
+li {
+  float: left;
+  font-family: "Trebuchet MS";
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: grey;
+}
