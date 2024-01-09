@@ -6,3 +6,7 @@ body {
     font-family: monospace;
     font-size: 300%;
   }
+  h2, ul, li, dt, dd{
+    font-family: monospace;
+    font-size: 150%;
+  }
