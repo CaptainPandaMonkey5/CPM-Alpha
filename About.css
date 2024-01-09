@@ -2,11 +2,9 @@ body {
   background-color: rgb(193, 228, 233);
 }
 h1 {
-  font-family: Franklin Gothic Medium;
+  font-family: monospace;
   font-size: 300%;
   text-align: center;
-  background-image: url(Hand-in-water.jpg);
-  background-size: cover;
 }
 p {
   font-family: helvetica;
@@ -14,6 +12,7 @@ p {
 }
 
 table,
+tr,
 th,
 td {
   border: 1px solid black;
