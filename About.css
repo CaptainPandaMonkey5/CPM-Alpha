@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(193, 228, 233);
+  background-color: #B8E2F2;
 }
 h1 {
   font-family: monospace;
@@ -25,7 +25,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: black;
+  background: rgb(77, 77, 77);
 }
 li {
   float: left;
