@@ -31,3 +31,12 @@ li a.this:hover {
   background-color: grey;
   text-decoration: underline;
 }
+
+.boardAd {
+  background-color: whitesmoke;
+  color: black;
+  border: 5px solid black;
+  margin: 5px;
+  padding: 200px;
+  text-align: center;
+}

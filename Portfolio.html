@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <link rel="stylesheet" href="Portfolio.css" />
+    <link rel="stylesheet" href="Portfolio.css" /> <!--CSS File Link-->
+    <script src="Portfolio.js"></script> <!--JS Script File Link-->
     <link rel="icon" type="image/x-icon" href="to the moon.jpg" />
     <title>Portfolio</title>
   </head>
@@ -69,11 +70,15 @@
         </a>
       </ul>
 
-      <h2 class="center">Works</h2>
+      <h2 class="center title">Works</h2>
       <dl>
         <dt><h2 id="projectName">Calculator</h2></dt>
         <dd class="center">created using Java</dd>
       </dl>
+
+      <p id="gitRepo">Want to see the public repo? Click the button below</p>
+      <button onclick="displayResult()">To Github Repo</button>
+
     </div>
     <br />
   </body>

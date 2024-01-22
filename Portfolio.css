@@ -6,20 +6,24 @@ h1 {
   font-family: monospace;
   font-size: 300%;
 }
-h2.center{
+.title{
   text-align: center;
   color:pink;
   font-size: 250%;
   font-family: monospace;
+
 }
 dt.center,dd.center{
   font-family: monospace;
   font-size: 150%;
-  text-align: center;
+  text-align: left;
 }
 #projectName{
   font-size: 200%;
   font-family: monospace;
+  background-color: rgb(77, 77, 77);
+  padding: 10px;
+  color: white;
 }
 ul {
   list-style-type: none;
