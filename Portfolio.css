@@ -7,7 +7,7 @@ h1 {
   font-size: 300%;
 }
 .title{
-  text-align: center;
+  text-align: left;
   color:pink;
   font-size: 250%;
   font-family: monospace;
@@ -19,7 +19,7 @@ dt.center,dd.center{
   text-align: left;
 }
 #projectName{
-  font-size: 200%;
+  font-size: 150%;
   font-family: monospace;
   background-color: rgb(77, 77, 77);
   padding: 10px;

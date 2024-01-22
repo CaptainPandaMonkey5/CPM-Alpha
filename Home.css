@@ -33,7 +33,7 @@ li a.this:hover {
 }
 
 .boardAd {
-  background-color: whitesmoke;
+  background-color: none;
   color: black;
   border: 5px solid black;
   margin: 5px;
