@@ -17,26 +17,58 @@ body {
   width: 90%;
   max-width: 1800px;
   height: 60px;
-  margin: 20px auto;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  list-style-type: none;
+  justify-content: center; /* Center content horizontally */
+  list-style: none; /* "none" is more commonly used */
 }
 
-.center-nav {
-  align-items: center;
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+ul {
+  overflow: auto;
+}
+
+.center-nav,
+.right-nav,
+.page-links,
+.social-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
  .center-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  text-align: center;
 }
 
 .page-links a{
   display: flex;
-  padding: 60px;
+  justify-content: center; /* Center the navigation items horizontally */
+  align-items: center; /* Center the navigation items vertically */
+}
+
+.page-links {
+  font-size: 1.5em; /* Using em for relative sizing */
+}
+
+.page-links li {
+  margin: 0 15px; /* Add space between items */
+}
+
+.page-links a {
+  display: block; /* Use block for better clickability */
+  padding: 10px; /* Adjusted padding for better layout */
   text-decoration: none;
   color: white;
 }
@@ -46,22 +78,9 @@ body {
   text-decoration: underline;
 }
 
-.page-links {
-  display: flex;
-  list-style-type: none;
-  margin-left: 88%;
-}
-
-.right-nav{
-  align-items: right;
-  margin-left: 45%;
-}
-
-.right-nav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.right-nav {
+  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .social-links a {
