@@ -20,9 +20,10 @@ body {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  justify-content: center; /* Center content horizontally */
-  list-style: none; /* "none" is more commonly used */
+  justify-content: center;
+  list-style: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -36,7 +37,13 @@ ul {
   overflow: auto;
 }
 
-.center-nav,
+.center-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .right-nav,
 .page-links,
 .social-links {
@@ -54,12 +61,12 @@ ul {
 
 .page-links a{
   display: flex;
-  justify-content: center; /* Center the navigation items horizontally */
-  align-items: center; /* Center the navigation items vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .page-links {
-  font-size: 1.5em; /* Using em for relative sizing */
+  font-size: 1.5em;
 }
 
 .page-links li {
@@ -68,7 +75,7 @@ ul {
 
 .page-links a {
   display: block; /* Use block for better clickability */
-  padding: 10px; /* Adjusted padding for better layout */
+  padding: 10px;
   text-decoration: none;
   color: white;
 }
@@ -85,10 +92,6 @@ ul {
 
 .social-links a {
   padding: 10px;
-}
-
-.social-links li a{
-  color: grey;
 }
 
 .social-links {
