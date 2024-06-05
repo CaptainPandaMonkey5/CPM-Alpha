@@ -1,5 +1,4 @@
 body {
-  /*background-color: #B8E2F2;*/
   background-image: url("../img/clouds.png");
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
@@ -7,8 +6,7 @@ body {
 
 .name-title {
   text-align: center;
-  font-family: "Roboto Mono", monospace;
-  font-size: 125%;
+  font-size: 1.25em; /* Using em for relative sizing */
   color: pink;
 }
 
@@ -22,59 +20,63 @@ body {
   margin: 20px auto;
   display: flex;
   align-items: center;
-  list-style-type: none;
+  justify-content: center; /* Center content horizontally */
+  list-style: none; /* "none" is more commonly used */
 }
 
-.center-nav {
-  align-items: center;
+.center-nav,
+.right-nav,
+.page-links,
+.social-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
- .center-nav ul {
-  list-style-type: none;
+
+.center-nav ul,
+.right-nav ul {
+  display: flex;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  text-align: center;
 }
 
-.page-links a{
+.center-nav ul {
   display: flex;
-  padding: 60px;
+  justify-content: center; /* Center the navigation items horizontally */
+  align-items: center; /* Center the navigation items vertically */
+}
+
+.page-links {
+  font-size: 1.5em; /* Using em for relative sizing */
+}
+
+.page-links li {
+  margin: 0 15px; /* Add space between items */
+}
+
+.page-links a {
+  display: block; /* Use block for better clickability */
+  padding: 10px; /* Adjusted padding for better layout */
   text-decoration: none;
   color: white;
 }
 
-.page-links li a:hover {
+.page-links a:hover {
   color: grey;
   text-decoration: underline;
 }
 
-.page-links {
-  display: flex;
-  list-style-type: none;
-  margin-left: 70%;
-  font-size: 150%;
-}
-
-.right-nav{
-  align-items: right;
-  margin-left: 42%;
-}
-
-.right-nav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.right-nav {
+  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .social-links a {
   padding: 10px;
 }
 
-.social-links li a{
+.social-links a {
   color: grey;
-}
-
-.social-links {
-  display: flex;
 }
