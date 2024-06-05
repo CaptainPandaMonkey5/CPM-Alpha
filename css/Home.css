@@ -18,29 +18,33 @@ body {
   background-color: rgb(77, 77, 77);
   padding: 10px;
   border-radius: 20px;
-  width: 90%;
-  max-width: 2000px;
+  width: 100%;
+  max-width: 1500px;
   height: 70px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between; /* Updated to space items evenly */
   align-items: center;
   list-style: none;
-}
-
-ul {
-  overflow: hidden;
 }
 
 .center-nav,
 .right-nav,
 .page-links,
 .social-links {
-  display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+}
+
+.center-nav {
+  display: flex;
+  flex: 1;
+}
+
+.social-links {
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .center-nav ul,
@@ -53,20 +57,19 @@ ul {
 
 .page-links a {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .page-links {
   font-size: 1.5em;
+  display: flex;
 }
 
 .page-links li {
-  margin: 0 15px; /* Add space between items */
+  margin: 0 20px; /* Add space between items */
 }
 
 .page-links a {
-  display: block; /* Use block for better clickability */
+  display: flex;
   padding: 10px;
   text-decoration: none;
   color: white;
@@ -89,21 +92,41 @@ ul {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+.social-links img {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  margin-left: 10px; /* Space between icons */
+}
+
+@media screen and (max-width: 700px) {
   .navbar-container {
-    width: 100%;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    height: auto;
+    padding: 20px;
   }
-  .center-nav,
-  .right-nav {
+
+  .center-nav {
     width: 100%;
-    text-align: center;
+    justify-content: center;
     margin-bottom: 10px;
   }
 
   .right-nav {
-    order: -1; /* Move right-nav to the top */
+    margin-right: auto;
+  }
+
+  .center-nav {
+    order: 1;
+  }
+
+  .logo-navbar {
+    order: -1
+  }
+
+  .right-nav {
+    order: 1;
   }
   
   .page-links li,
@@ -113,6 +136,6 @@ ul {
 
   .page-links a,
   .social-links a {
-    font-size: 1.5em; /* Increased font size for smaller screens */
+    font-size: 1.2em; /* Increased font size for smaller screens */
   }
 }

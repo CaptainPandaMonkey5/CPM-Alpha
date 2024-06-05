@@ -1,8 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  /*background-color: #B8E2F2;*/
   background-image: url("../img/clouds.png");
   font-family: "Trebuchet MS";
 }
+
 .name-title {
   text-align: center;
   font-family: monospace;
@@ -14,67 +18,58 @@ body {
   background-color: rgb(77, 77, 77);
   padding: 10px;
   border-radius: 20px;
-  width: 90%;
-  max-width: 1800px;
-  height: 60px;
+  width: 100%;
+  max-width: 1500px;
+  height: 70px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between; /* Updated to space items evenly */
   align-items: center;
-  justify-content: center;
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-ul {
-  overflow: auto;
+.center-nav,
+.right-nav,
+.page-links,
+.social-links {
+  list-style: none;
+  text-align: center;
 }
 
 .center-nav {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  flex: 1;
 }
 
-.right-nav,
-.page-links,
 .social-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  flex: 1;
+  justify-content: flex-end;
 }
- .center-nav ul {
+
+.center-nav ul,
+.right-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.page-links a{
+.page-links a {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .page-links {
   font-size: 1.5em;
+  display: flex;
 }
 
 .page-links li {
-  margin: 0 15px; /* Add space between items */
+  margin: 0 20px; /* Add space between items */
 }
 
 .page-links a {
-  display: block; /* Use block for better clickability */
+  display: flex;
   padding: 10px;
   text-decoration: none;
   color: white;
@@ -86,8 +81,7 @@ ul {
 }
 
 .right-nav {
-  margin-left: auto;
-  justify-content: flex-end;
+  margin-left: auto; /* Pushes right-nav to the right edge */
 }
 
 .social-links a {
@@ -96,4 +90,52 @@ ul {
 
 .social-links {
   display: flex;
+}
+
+.social-links img {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  margin-left: 10px; /* Space between icons */
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .center-nav {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .right-nav {
+    margin-right: auto;
+  }
+
+  .center-nav {
+    order: 1;
+  }
+
+  .logo-navbar {
+    order: -1
+  }
+
+  .right-nav {
+    order: 1;
+  }
+  
+  .page-links li,
+  .social-links li {
+    margin: 0 10px; /* Adjusted margin for smaller screens */
+  }
+
+  .page-links a,
+  .social-links a {
+    font-size: 1.2em; /* Increased font size for smaller screens */
+  }
 }
