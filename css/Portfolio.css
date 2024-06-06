@@ -3,7 +3,8 @@
 }
 
 body {
-  background-image: url("../img/clouds.png");
+  background-color: black;
+  /*background-image: url("../img/clouds.png");*/
   font-family: "Trebuchet MS";
 }
 
@@ -138,4 +139,26 @@ body {
   .social-links a {
     font-size: 1.2em; /* Increased font size for smaller screens */
   }
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.project-container > .projects {
+  margin: 10px;
+  padding: 5px;
+}
+
+.projects {
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+.projects > h2, p {
+  margin: 15px;
 }
