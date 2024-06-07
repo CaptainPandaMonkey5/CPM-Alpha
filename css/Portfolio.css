@@ -3,8 +3,7 @@
 }
 
 body {
-  background-color: black;
-  /*background-image: url("../img/clouds.png");*/
+  background-image: url("../img/clouds.png");
   font-family: "Trebuchet MS";
 }
 
@@ -123,13 +122,13 @@ body {
   }
 
   .logo-navbar {
-    order: -1
+    order: -1;
   }
 
   .right-nav {
     order: 1;
   }
-  
+
   .page-links li,
   .social-links li {
     margin: 0 10px; /* Adjusted margin for smaller screens */
@@ -141,16 +140,17 @@ body {
   }
 }
 
+/* start of body css */
+
 .project-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /*makes columns 2x2*/
+  gap: 10px;
+  margin-top: 5rem;
 }
 
 .project-container > .projects {
-  margin: 10px;
+  margin: 2rem;
   padding: 5px;
 }
 
@@ -159,6 +159,41 @@ body {
   border-radius: 10px;
 }
 
-.projects > h2, p {
+.projects > h2,
+p {
   margin: 15px;
+}
+
+@media screen and (max-width: 780px) {
+  .project-container {
+    grid-template-columns: 1fr; /*stacks into one single column*/
+  }
+}
+
+/*footer designs*/
+.footer {
+  color: beige;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.footer-section {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+.footer-section p {
+  margin: 0;
 }
