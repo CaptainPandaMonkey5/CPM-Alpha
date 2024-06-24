@@ -170,6 +170,23 @@ p {
   }
 }
 
+/*Body Buttons designs*/
+.repoButton {
+  font-size: 15px;
+  display: flex;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5rem;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.repoButton:hover {
+  background-color: #ccc; /* Change background color on hover */
+  border: 1px solid black;
+}
+
 /*footer designs*/
 .footer {
   color: beige;

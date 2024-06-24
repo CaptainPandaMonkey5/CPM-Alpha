@@ -79,10 +79,7 @@
     <article class="project-container">
       <article class="projects">
         <h2>
-          <a
-            href="https://github.com/CaptainPandaMonkey5/Learn_With_Panda"
-            target="_blank"
-            >Learn with Panda</a
+          <a>Learn with Panda</a
           >
         </h2>
         <p>
@@ -90,14 +87,20 @@
           roadmap for Full Stack Developer. This will redirect you to the
           repository as the project is not yet finished.
         </p>
+        <button class="repoButton" data-link = "https://github.com/CaptainPandaMonkey5/Learn_With_Panda">Repository</button>
+        <script>
+          document.getElementById('repoButton').addEventListener('click', function() {
+          // Retrieve the link from the attribute
+          var lwp_link = this.getAttribute('data-link');
+          // Open the link in a new tab
+          window.open(lwp_link, '_blank');
+        });
+        </script>
       </article>
 
       <article class="projects">
         <h2>
-          <a
-            href="https://github.com/CaptainPandaMonkey5/CPM-Alpha"
-            target="_blank"
-            >CPM-Alpha</a
+          <a>CPM-Alpha</a
           >
         </h2>
         <p>
@@ -105,20 +108,31 @@
           information. This will redirect you to the repository as the project
           is not yet finished.
         </p>
+        <button class="repoButton" data-link="https://github.com/CaptainPandaMonkey5/CPM-Alpha">Repository</button>
+        <script>
+          document.getElementById('repoButton').addEventListener('click', function(){
+            var cpmA_link = this.getAttribute('data-link');
+            window.open(felProject_link, '_blank');
+          });
+        </script>
       </article>
 
       <article class="projects">
         <h2>
-          <a
-            href="https://github.com/CaptainPandaMonkey5/FEL_FCO"
-            target="_blank"
-            >AJC Bike Shop POS Website</a
+          <a>AJC Bike Shop POS Website</a
           >
         </h2>
         <p>
           final course output for Free Elective Web Development, group
           development
         </p>
+        <button class="repoButton" data-link="https://github.com/CaptainPandaMonkey5/FEL_FCO/tree/main">Repository</button>
+        <script>
+          document.getElementById('repoButton').addEventListener('click', function() {
+            var felProject_link = this.getAttribute('data-link');
+            window.open(felProject_link, '_blank');
+          });
+        </script>
       </article>
     </article> <!--end of article projects-->
 

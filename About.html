@@ -74,6 +74,23 @@
           </ul>
         </div> <!--end of right-nav-->
       </div> <!--end of navbar-container-->
+
+      <div>
+        <p id="demo"></p>
+
+        <script>
+          const person = {
+            fName: "Sam",
+            lName: "Carpenter",
+            age: 21,
+            eyeColor: "brown",
+            fLName: function() {
+              return this.fName + " " + this.lName;
+            }
+          };
+          document.getElementById("demo").innerHTML = person.fLName();
+        </script>
+      </div>
     </body>  
   </html>
   
