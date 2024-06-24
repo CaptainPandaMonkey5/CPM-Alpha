@@ -171,10 +171,17 @@ p {
 }
 
 /*Body Buttons designs*/
-.repoButton {
+.repoButton-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#repoButton1 {
   font-size: 15px;
   display: flex;
-  border: 1px solid black;
+  border: 2px solid black;
   cursor: pointer;
   border-radius: 5rem;
   padding: 10px 20px;
@@ -182,9 +189,41 @@ p {
   transition: all 0.3s ease; /* Smooth transition for the hover effect */
 }
 
-.repoButton:hover {
+#repoButton1:hover {
   background-color: #ccc; /* Change background color on hover */
-  border: 1px solid black;
+  border: 2px solid black;
+}
+
+#repoButton2 {
+  font-size: 15px;
+  display: flex;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5rem;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+#repoButton2:hover {
+  background-color: #ccc; /* Change background color on hover */
+  border: 2px solid black;
+}
+
+#repoButton3 {
+  font-size: 15px;
+  display: flex;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5rem;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+#repoButton3:hover {
+  background-color: #ccc; /* Change background color on hover */
+  border: 2px solid black;
 }
 
 /*footer designs*/

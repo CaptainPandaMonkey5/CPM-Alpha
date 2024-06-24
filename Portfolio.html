@@ -87,15 +87,17 @@
           roadmap for Full Stack Developer. This will redirect you to the
           repository as the project is not yet finished.
         </p>
-        <button class="repoButton" data-link = "https://github.com/CaptainPandaMonkey5/Learn_With_Panda">Repository</button>
-        <script>
-          document.getElementById('repoButton').addEventListener('click', function() {
-          // Retrieve the link from the attribute
-          var lwp_link = this.getAttribute('data-link');
-          // Open the link in a new tab
-          window.open(lwp_link, '_blank');
-        });
-        </script>
+        <div class="repoButton-container">
+          <button id="repoButton1" data-link = "https://github.com/CaptainPandaMonkey5/Learn_With_Panda">Repository</button>
+            <script>
+              document.getElementById('repoButton1').addEventListener('click', function() {
+              // Retrieve the link from the attribute
+              var lwp_link = this.getAttribute('data-link');
+              // Open the link in a new tab
+              window.open(lwp_link, '_blank');
+            });
+            </script>
+        </div>
       </article>
 
       <article class="projects">
@@ -108,13 +110,15 @@
           information. This will redirect you to the repository as the project
           is not yet finished.
         </p>
-        <button class="repoButton" data-link="https://github.com/CaptainPandaMonkey5/CPM-Alpha">Repository</button>
-        <script>
-          document.getElementById('repoButton').addEventListener('click', function(){
-            var cpmA_link = this.getAttribute('data-link');
-            window.open(felProject_link, '_blank');
-          });
-        </script>
+        <div class="repoButton-container">
+          <button id="repoButton2" data-link="https://github.com/CaptainPandaMonkey5/CPM-Alpha">Repository</button>
+            <script>
+              document.getElementById('repoButton2').addEventListener('click', function(){
+                var cpmA_link = this.getAttribute('data-link');
+                window.open(cpmA_link, '_blank');
+              });
+            </script>
+        </div>
       </article>
 
       <article class="projects">
@@ -126,13 +130,15 @@
           final course output for Free Elective Web Development, group
           development
         </p>
-        <button class="repoButton" data-link="https://github.com/CaptainPandaMonkey5/FEL_FCO/tree/main">Repository</button>
-        <script>
-          document.getElementById('repoButton').addEventListener('click', function() {
-            var felProject_link = this.getAttribute('data-link');
-            window.open(felProject_link, '_blank');
-          });
-        </script>
+        <div class="repoButton-container">
+          <button id="repoButton3" data-link="https://github.com/CaptainPandaMonkey5/FEL_FCO/tree/main">Repository</button>
+            <script>
+              document.getElementById('repoButton3').addEventListener('click', function() {
+                var felProject_link = this.getAttribute('data-link');
+                window.open(felProject_link, '_blank');
+              });
+            </script>
+        </div>
       </article>
     </article> <!--end of article projects-->
 
