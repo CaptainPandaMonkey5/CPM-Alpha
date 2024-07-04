@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>CaptainPandaMonkey</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body>
+    <nav class="w-full max-w-[1500px] m-0 mx-auto mt-2 bg-[#4d4d4d] p-2.5 rounded-[20px] text-white">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+    
+            <!-- Links (stacked on mobile, side by side on desktop) -->
+            <ul class="overflow-hidden m-0 p-0 text-xl flex flex-col md:flex-row justify-center md:justify-center">
+                <li class="my-2 md:my-0 mx-5 hover:bg-[#8c8c8c] rounded">
+                    <a href="" class="flex">Home</a>
+                </li>
+                <li class="my-2 md:my-0 mx-5 hover:bg-[#8c8c8c] rounded">
+                    <a href="">Portfolio</a>
+                </li>
+                <li class="my-2 md:my-0 mx-5 hover:bg-[#8c8c8c] rounded">
+                    <a href="">About</a>
+                </li>
+            </ul>
+
+            <!-- Heading (centered on all screens) -->
+            <h1 class="text-3xl font-mono text-center md:mb-0">
+                CaptainPandaMonkey
+            </h1>
+
+                <ul class="overflow-hidden m-0 p-0 text-xl flex flex-row md:flex-row justify-end md:justify-end">
+                  <li class="my-2 mx-2">
+                    <a class="logo" href="https://twitter.com/CptPandaMonkey" target="_blank">
+                      <img
+                        alt="twitter.com"
+                        src="templates socials/twitter logo.svg"
+                      />
+                    </a>
+                  </li>
+                  <li class="my-2 mx-2">
+                    <a href="https://www.instagram.com/captainpandamonkey/" target="_blank">
+                      <img
+                        alt="instagram.com"
+                        src="templates socials/instagram.svg"
+                      />
+                    </a>
+                  </li>
+                  <li class="my-2 mx-2">
+                    <a href="https://github.com/CaptainPandaMonkey5" target="_blank">
+                      <img
+                        alt="github.com"
+                        src="templates socials/github logo.svg"
+                      />
+                    </a>
+                  </li>
+                  <li class="my-2 mx-2">
+                    <a href="https://www.youtube.com/@captainpandamonkey_" target="_blank">
+                      <img
+                        alt="youtube.com"
+                        src="templates socials/youtube logo.svg"
+                      />
+                    </a>
+                  </li>
+                </ul>
+    </nav>
+    
+</body>
+</html>
