@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,102 +16,144 @@
   </head>
   <body>
     <nav
-      class="w-full max-w-7xl m-0 mx-auto mt-2 bg-[#4d4d4d] p-2.5 rounded-[20px] text-white sm:"
+      class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-black px-4 py-3 text-white shadow-xl lg:flex-row"
     >
-      <div class="flex flex-row items-center p-2">
-        <!-- Heading (centered on all screens) -->
-        <h1 class="text-3xl font-mono text-center">CaptainPandaMonkey</h1>
+      <div class="flex items-center justify-between p-2">
+        <img src="https://placehold.co/40" alt="Logo" class="mr-2 h-8 w-8" />
+        <h1 class="mr-2 font-mono text-lg font-semibold">CaptainPandaMonkey</h1>
+        <div class="items-center space-x-2 text-lg">
+          <a href="index.html" class="rounded p-2 hover:bg-[#3f3f3f]">Home</a>
+          <a href="portfolio.html" class="rounded p-2 hover:bg-[#3f3f3f]"
+            >Portfolio</a
+          >
+          <a href="#" class="rounded p-2 hover:bg-[#3f3f3f]">About</a>
+        </div>
+      </div>
 
-        <!-- Links (stacked on mobile, side by side on desktop) -->
-        <ul class="overflow-hidden text-2xl flex flex-row ml-auto">
-          <li class="px-5 py-1 hover:bg-[#8c8c8c] rounded">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="px-5 py-1 hover:bg-[#8c8c8c] rounded">
-            <a href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="px-5 py-1 hover:bg-[#8c8c8c] rounded">
-            <a href="">About</a>
-          </li>
-        </ul>
+      <div class="flex items-center space-x-2">
+        <a href="#" aria-label="Twitter">
+          <img src="https://placehold.co/20" alt="Twitter" class="h-8 w-8" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="https://placehold.co/20" alt="Instagram" class="h-8 w-8" />
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img src="https://placehold.co/20" alt="Facebook" class="h-8 w-8" />
+        </a>
       </div>
     </nav>
 
-    <!-- project-container -->
-    <article class="grid grid-cols-2 gap-4 mt-12">
-        <!-- projects -->
-      <div class="m-8 p-1 bg-[#faebd7] rounded-xl">
+    <article class="mt-12 grid grid-cols-2 gap-4">
+      <div class="m-8 rounded-xl border-2 bg-[#faebd7] p-1">
         <h2 class="m-3">Learn with Panda</h2>
         <p class="m-3">
           similar to cs.fyi as a small project or activity based on roadmap.sh
           roadmap for Full Stack Developer. This will redirect you to the
           repository as the project is not yet finished.
         </p>
-        <!-- repoButton-container -->
-        <div class="flex justify-end mb-2 mr-2">
-            <button id="repoButton1" data-link="https://github.com/CaptainPandaMonkey5/Learn_With_Panda"
-            class="text-sm px-2 py-2 rounded-lg bg-white cursor-pointer transition-all duration-300 ease hover:bg-[#ccc]
-            ">
-                Repository
-            </button>
-            <script>
-                document.getElementById('repoButton1').addEventListener('click', function() {
+        <div class="mb-2 mr-2 flex justify-end">
+          <button
+            id="repoButton1"
+            data-link="https://github.com/CaptainPandaMonkey5/Learn_With_Panda"
+            class="ease cursor-pointer overflow-hidden rounded-lg bg-white px-2 py-2 text-sm shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+          >
+            Repository
+          </button>
+          <script>
+            document
+              .getElementById("repoButton1")
+              .addEventListener("click", function () {
                 // Retrieve the link from the attribute
-                var lwp_link = this.getAttribute('data-link');
+                var lwp_link = this.getAttribute("data-link");
                 // Open the link in a new tab
-                window.open(lwp_link, '_blank');
+                window.open(lwp_link, "_blank");
               });
-            </script>
+          </script>
         </div>
       </div>
 
-      <div class="m-8 p-1 bg-[#faebd7] rounded-xl overflow-hidden">
+      <div class="m-8 overflow-hidden rounded-xl border-2 bg-[#faebd7] p-1">
         <h2 class="m-3">CPM-Alpha</h2>
         <p class="m-3">
-            my own website showcasing all my recent projects and other
-            information. This will redirect you to the repository as the project
-            is not yet finished.   
+          my own website showcasing all my recent projects and other
+          information. This will redirect you to the repository as the project
+          is not yet finished.
         </p>
-        <div class="flex justify-end mb-2 mr-2">
-            <button id="repoButton2" data-link="https://github.com/CaptainPandaMonkey5/CPM-Alpha"
-            class="text-sm px-2 py-2 rounded-lg justify-stretch bg-white cursor-pointer transition-all duration-300 ease hover:bg-[#ccc]
-            ">
-                Repository
-            </button>
-            <script>
-                document.getElementById('repoButton2').addEventListener('click', function(){
-                  var cpmA_link = this.getAttribute('data-link');
-                  window.open(cpmA_link, '_blank');
-                });
-              </script>
+        <div class="mb-2 mr-2 flex justify-end">
+          <button
+            id="repoButton2"
+            data-link="https://github.com/CaptainPandaMonkey5/CPM-Alpha"
+            class="ease cursor-pointer overflow-hidden rounded-lg bg-white px-2 py-2 text-sm shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+          >
+            Repository
+          </button>
+          <script>
+            document
+              .getElementById("repoButton2")
+              .addEventListener("click", function () {
+                var cpmA_link = this.getAttribute("data-link");
+                window.open(cpmA_link, "_blank");
+              });
+          </script>
         </div>
       </div>
 
-      <div class="m-8 p-1 bg-[#faebd7] rounded-xl">
+      <div class="border- m-8 rounded-xl border-2 bg-[#faebd7] p-1">
         <h2 class="m-3">AJC Bike Shop POST Website</h2>
         <p class="m-3">
-            final course output for Free Elective Web Development, group
-            development
+          final course output for Free Elective Web Development, group
+          development
         </p>
-        <div class="flex justify-end mb-2 mr-2">
-            <button id="repoButton3" data-link="https://github.com/CaptainPandaMonkey5/FEL_FCO/tree/main"
-            class="text-sm px-2 py-2 rounded-lg bg-white cursor-pointer transition-all duration-300 ease hover:bg-[#ccc]
-            ">
-                Repository
-            </button>
-            <script>
-                document.getElementById('repoButton3').addEventListener('click', function() {
-                  var felProject_link = this.getAttribute('data-link');
-                  window.open(felProject_link, '_blank');
-                });
-              </script>
+        <div class="mb-2 mr-2 flex justify-end">
+          <button
+            id="repoButton3"
+            data-link="https://github.com/CaptainPandaMonkey5/FEL_FCO/tree/main"
+            class="ease cursor-pointer overflow-hidden rounded-lg bg-white px-2 py-2 text-sm shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+          >
+            Repository
+          </button>
+          <script>
+            document
+              .getElementById("repoButton3")
+              .addEventListener("click", function () {
+                var felProject_link = this.getAttribute("data-link");
+                window.open(felProject_link, "_blank");
+              });
+          </script>
+        </div>
+      </div>
+
+      <div class="border- m-8 rounded-xl border-2 bg-[#faebd7] p-1">
+        <h2 class="m-3">Random Picker</h2>
+        <p class="m-3">
+          randomly picking items from user input - 2024 this was made for the
+          sole purpose of being able to pick random games using their names, via
+          the input of the user. you can visit the website at
+          https://captainpandamonkey5.github.io/Random_Picker/
+        </p>
+        <div class="mb-2 mr-2 flex justify-end">
+          <button
+            id="repoButton4"
+            data-link="https://github.com/CaptainPandaMonkey5/Random_Picker"
+            class="ease cursor-pointer overflow-hidden rounded-lg bg-white px-2 py-2 text-sm shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+          >
+            Repository
+          </button>
+          <script>
+            document
+              .getElementById("repoButton4")
+              .addEventListener("click", function () {
+                var randomPicker_link = this.getAttribute("data-link");
+                window.open(randomPicker_link, "_blank");
+              });
+          </script>
         </div>
       </div>
     </article>
 
     <footer class="text-beige py-5">
       <div class="container mx-auto flex flex-wrap justify-around px-4">
-        <div class="w-full sm:w-auto text-center sm:text-left mb-4 sm:mb-0">
+        <div class="mb-4 w-full text-center sm:mb-0 sm:w-auto sm:text-left">
           <p class="text-lg">&copy; 2024 CaptainPandaMonkey</p>
         </div>
       </div>

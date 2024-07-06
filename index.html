@@ -1,50 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <title>CaptainPandaMonkey</title>
     <style type="text/tailwindcss">
-        @layer utilities {
-          .content-auto {
-            content-visibility: auto;
-          }
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
         }
-      </style>
-</head>
-<body>
-    <nav class="w-full max-w-7xl m-0 mx-auto mt-2 bg-[#4d4d4d] p-2.5 rounded-[20px] text-white sm:">
-        <div class="flex flex-row items-center p-2">
-
-            <!-- Heading (centered on all screens) -->
-          <h1 class="text-3xl font-mono text-center">
-              CaptainPandaMonkey
-          </h1>
-    
-            <!-- Links (stacked on mobile, side by side on desktop) -->
-            <ul class="overflow-hidden text-2xl flex flex-row ml-auto">
-                <li class="px-5 py-1 hover:bg-[#8c8c8c] rounded">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="px-5 py-1 hover:bg-[#8c8c8c] rounded">
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="px-5 py-1 hover:bg-[#8c8c8c] rounded">
-                    <a href="">About</a>
-                </li>
-            </ul>
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-black px-4 py-3 text-white shadow-xl lg:flex-row"
+    >
+      <div class="flex items-center justify-between p-2">
+        <img src="https://placehold.co/40" alt="Logo" class="mr-2 h-8 w-8" />
+        <h1 class="mr-2 font-mono text-lg font-semibold">CaptainPandaMonkey</h1>
+        <div class="items-center space-x-2 text-lg">
+          <a href="index.html" class="rounded p-2 hover:bg-[#3f3f3f]">Home</a>
+          <a href="portfolio.html" class="rounded p-2 hover:bg-[#3f3f3f]"
+            >Portfolio</a
+          >
+          <a href="#" class="rounded p-2 hover:bg-[#3f3f3f]">About</a>
         </div>
+      </div>
+
+      <div class="flex items-center space-x-2">
+        <a href="#" aria-label="Twitter">
+          <img src="https://placehold.co/20" alt="Twitter" class="h-8 w-8" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="https://placehold.co/20" alt="Instagram" class="h-8 w-8" />
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img src="https://placehold.co/20" alt="Facebook" class="h-8 w-8" />
+        </a>
+      </div>
     </nav>
 
     <footer class="text-beige py-5">
       <div class="container mx-auto flex flex-wrap justify-around px-4">
-        <div class="w-full sm:w-auto text-center sm:text-left mb-4 sm:mb-0">
+        <div class="mb-4 w-full text-center sm:mb-0 sm:w-auto sm:text-left">
           <p class="text-lg">&copy; 2024 CaptainPandaMonkey</p>
         </div>
       </div>
     </footer>
-
-</body>
+  </body>
 </html>
