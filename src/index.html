@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <title>CaptainPandaMonkey</title>
     <style type="text/tailwindcss">
@@ -20,31 +21,72 @@
       x-data="{ open: false }"
       class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-gray-800 px-4 py-3 text-white shadow-xl lg:flex-row"
     >
-      <div class="flex items-center justify-between p-2 w-full lg:w-auto">
+      <div class="flex w-full items-center justify-between p-2 lg:w-auto">
         <div class="flex items-center">
           <img
             src="assets/images/Commission 3.png"
             alt="Logo"
             class="mr-2 h-8 w-8"
           />
-          <h1 class="mr-6 font-mono text-lg font-semibold">CaptainPandaMonkey</h1>
+          <h1 class="mr-6 font-mono text-lg font-semibold">
+            CaptainPandaMonkey
+          </h1>
         </div>
 
-        <!-- burger button -->
+        <!-- burger button from Subu19 uiverse-->
         <button @click="open = !open" class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          <div class="hamburger">
+            <input class="checkbox" type="checkbox" />
+            <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+              <path
+                class="lineTop line"
+                stroke-linecap="round"
+                stroke-width="4"
+                stroke="black"
+                d="M6 11L44 11"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-width="4"
+                stroke="black"
+                d="M6 24H43"
+                class="lineMid line"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-width="4"
+                stroke="black"
+                d="M6 37H43"
+                class="lineBottom line"
+              ></path>
             </svg>
+          </div>
         </button>
       </div>
 
-      <div :class="{ 'block': open, 'hidden': !open }" class="hidden w-full mt-4 space-y-2 md:flex md:items-center md:space-y-0 md:space-x-4 md:mt-0" id="navbar-main">
-        <a href="/src/index.html" class="block md:inline-block rounded p-2 hover:bg-[#3f3f3f]">Home</a>
-        <a href="/src/portfolio.html" class="block md:inline-block rounded p-2 hover:bg-[#3f3f3f]">Portfolio</a>
-        <a href="/src/about.html" class="block md:inline-block rounded p-2 hover:bg-[#3f3f3f]">About</a>
+      <div
+        :class="{ 'block': open, 'hidden': !open }"
+        class="mt-4 hidden w-full space-y-2 md:mt-0 md:flex md:items-center md:space-x-4 md:space-y-0"
+        id="navbar-main"
+      >
+        <a
+          href="/src/index.html"
+          class="block rounded p-2 hover:bg-[#3f3f3f] md:inline-block"
+          >Home</a
+        >
+        <a
+          href="/src/portfolio.html"
+          class="block rounded p-2 hover:bg-[#3f3f3f] md:inline-block"
+          >Portfolio</a
+        >
+        <a
+          href="/src/about.html"
+          class="block rounded p-2 hover:bg-[#3f3f3f] md:inline-block"
+          >About</a
+        >
       </div>
 
-      <div class="hidden md:flex items-center space-x-2">
+      <div class="hidden items-center space-x-2 md:flex">
         <a href="#" aria-label="Twitter">
           <img
             src="assets/templates_socmed/twitter logo.svg"
