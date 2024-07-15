@@ -19,6 +19,18 @@
           content-visibility: auto;
         }
       }
+
+      .animate-spin-slow {
+        animation: spin 10s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
     </style>
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
@@ -123,6 +135,34 @@
         </a>
       </div>
     </nav>
+
+    <div
+      class="text-primary-foreground flex min-h-screen items-center justify-center text-white"
+    >
+      <div
+        class="max-w-2xl transform rounded-lg bg-black p-8 shadow-lg transition-transform duration-300 hover:scale-105"
+      >
+        <div class="mb-4 flex items-center">
+          <img
+            class="border-accent animate-spin-slow mr-4 h-16 w-16 rounded-full border-4"
+            src="https://placehold.co/64x64"
+            alt="Profile Image"
+          />
+          <h1 class="text-4xl font-extrabold">About Me</h1>
+        </div>
+        <p class="text-secondary-foreground mb-4 text-lg">
+          I'm a passionate developer who loves creating amazing web experiences.
+        </p>
+        <p class="text-secondary-foreground mb-4 text-lg">
+          Let's connect and build something incredible together!
+        </p>
+        <button
+          class="hover:bg-primary/80 disabled transform rounded-full bg-white px-4 py-2 text-black transition-transform duration-300 hover:rotate-6"
+        >
+          Connect with Me
+        </button>
+      </div>
+    </div>
 
     <footer class="text-beige py-5">
       <div class="container mx-auto flex flex-wrap justify-around px-4">
