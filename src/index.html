@@ -13,16 +13,31 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <base href="https://captainpandamonkey5.github.io/CPM-Alpha/src/" />
     <title>CaptainPandaMonkey</title>
-    <style type="text/tailwindcss">
+    <style>
       @layer utilities {
-        .content-auto {
-          content-visibility: auto;
+        .bg-circle-full {
+          background-image: url("assets/bg-image/circle-scatter-haikei.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .animate-spin-slow {
+        animation: spin 10s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
         }
       }
     </style>
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
-  <body>
+  <body class="bg-circle-full">
     <nav
       x-data="{ open: false }"
       class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-gray-800 px-4 py-3 text-white shadow-xl lg:flex-row"
@@ -85,11 +100,11 @@
           class="block rounded p-2 hover:bg-[#3f3f3f] md:inline-block"
           >Portfolio</a
         >
-        <!-- <a
+        <a
           href="about.html"
           class="block rounded p-2 hover:bg-[#3f3f3f] md:inline-block"
           >About</a
-        > -->
+        >
       </div>
 
       <div class="hidden items-center space-x-2 md:flex">
@@ -124,7 +139,7 @@
       </div>
     </nav>
 
-    <footer class="text-beige py-5">
+    <footer class="py-5 text-white">
       <div class="container mx-auto flex flex-wrap justify-around px-4">
         <div class="mb-4 w-full text-center sm:mb-0 sm:w-auto sm:text-left">
           <p class="text-lg">&copy; 2024 CaptainPandaMonkey</p>
