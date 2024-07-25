@@ -1,9 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="sunset">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
@@ -15,8 +21,11 @@
     <title>CaptainPandaMonkey</title>
     <style type="text/tailwindcss">
       @layer utilities {
-        .content-auto {
-          content-visibility: auto;
+        .bg-circle-full {
+          background-image: url("assets/bg-image/circle-scatter-haikei-1820x1080.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
         }
       }
     </style>
@@ -25,7 +34,7 @@
   <body class="bg-circle-full">
     <nav
       x-data="{ open: false }"
-      class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-gray-800 px-4 py-3 text-white shadow-xl lg:flex-row"
+      class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-neutral px-4 py-3 text-white shadow-xl lg:flex-row"
     >
       <div class="flex w-full items-center justify-between p-2 lg:w-auto">
         <div class="flex items-center">
@@ -34,7 +43,7 @@
             alt="Logo"
             class="mr-2 h-8 w-8"
           />
-          <h1 class="mr-6 font-mono text-lg font-semibold">
+          <h1 class="mr-7 font-mono text-lg font-semibold">
             CaptainPandaMonkey
           </h1>
         </div>
@@ -127,118 +136,97 @@
     <article
       class="mx-auto mt-12 grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-2"
     >
-      <div class="m-8 rounded-xl border-2 bg-[#faebd7] p-1">
-        <h2 class="m-3">Learn with Panda</h2>
-        <p class="m-3">
-          similar to cs.fyi as a small project or activity based on roadmap.sh
-          roadmap for Full Stack Developer. This will redirect you to the
-          repository as the project is not yet finished.
+      <div class="m-8 rounded-xl border-2 bg-base-300 p-1">
+        <h2 class="m-3 text-lg font-semibold text-white">Learn with Panda</h2>
+        <p class="m-3 text-white">
+          This small project, inspired by cs.fyi and based on the roadmap.sh
+          roadmap for Full Stack Developers, is designed to provide a
+          comprehensive overview of essential full stack development skills.
+          Currently in progress.
         </p>
         <div class="mb-2 mr-2 flex justify-end">
           <button
             id="repoButton1"
             data-link="https://github.com/CaptainPandaMonkey5/Learn_With_Panda"
-            class="ease cursor-pointer overflow-hidden rounded-lg bg-white px-2 py-2 text-sm shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+            class="ease btn-disabled cursor-pointer overflow-hidden rounded-lg bg-success px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
           >
             Repository
           </button>
-          <script>
-            document
-              .getElementById("repoButton1")
-              .addEventListener("click", function () {
-                // Retrieve the link from the attribute
-                var lwp_link = this.getAttribute("data-link");
-                // Open the link in a new tab
-                window.open(lwp_link, "_blank");
-              });
-          </script>
         </div>
       </div>
 
-      <div class="m-8 overflow-hidden rounded-xl border-2 bg-[#faebd7] p-1">
-        <h2 class="m-3">CPM-Alpha</h2>
-        <p class="m-3">
-          my own website showcasing all my recent projects and other
-          information. This will redirect you to the repository as the project
-          is not yet finished.
+      <div class="m-8 overflow-hidden rounded-xl border-2 bg-base-300 p-1">
+        <h2 class="m-3 text-lg font-semibold text-white">CPM-Alpha</h2>
+        <p class="m-3 text-white">
+          This portfolio website highlights the creator's recent projects and
+          other relevant information. As the site is still under development,
+          visitors will be redirected to the project's repository for the latest
+          updates.
         </p>
         <div class="mb-2 mr-2 flex justify-end">
           <button
             id="repoButton2"
             data-link="https://github.com/CaptainPandaMonkey5/CPM-Alpha"
-            class="ease cursor-pointer overflow-hidden rounded-lg bg-white px-2 py-2 text-sm shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+            class="ease cursor-pointer overflow-hidden rounded-lg bg-success px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
           >
             Repository
           </button>
-          <script>
-            document
-              .getElementById("repoButton2")
-              .addEventListener("click", function () {
-                var cpmA_link = this.getAttribute("data-link");
-                window.open(cpmA_link, "_blank");
-              });
-          </script>
         </div>
       </div>
 
-      <div class="border- m-8 rounded-xl border-2 bg-[#faebd7] p-1">
-        <h2 class="m-3">AJC Bike Shop POST Website</h2>
-        <p class="m-3">
-          final course output for Free Elective Web Development, group
-          development
+      <div class="border- m-8 rounded-xl border-2 bg-base-300 p-1">
+        <h2 class="m-3 text-lg font-semibold text-white">
+          AJC Bike Shop POST Website
+        </h2>
+        <p class="m-3 text-white">
+          This website, created as the final course output for a Free Elective
+          Web Development group project, focuses on a Point of Sale (POS)
+          system. It features an intuitive interface for managing sales
+          transactions, including inventory management and sales reporting.
         </p>
         <div class="mb-2 mr-2 flex justify-end">
           <button
             id="repoButton3"
             data-link="https://github.com/CaptainPandaMonkey5/FEL_FCO/tree/main"
-            class="ease cursor-pointer overflow-hidden rounded-lg bg-white px-2 py-2 text-sm shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+            class="ease cursor-pointer overflow-hidden rounded-lg bg-success px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
           >
             Repository
           </button>
-          <script>
-            document
-              .getElementById("repoButton3")
-              .addEventListener("click", function () {
-                var felProject_link = this.getAttribute("data-link");
-                window.open(felProject_link, "_blank");
-              });
-          </script>
         </div>
       </div>
 
-      <div class="border- m-8 rounded-xl border-2 bg-[#faebd7] p-1">
-        <h2 class="m-3">Random Picker</h2>
-        <p class="m-3">
-          randomly picking items from user input - 2024 this was made for the
-          sole purpose of being able to pick random games using their names, via
-          the input of the user.
+      <div class="border- m-8 rounded-xl border-2 bg-base-300 p-1">
+        <h2 class="m-3 text-lg font-semibold text-white">RandomPicker</h2>
+        <p class="m-3 text-white">
+          RandomPicker is a tool developed to help users randomly select games
+          by their names, but it can be used for any list of items. The
+          application now includes additional features such as a list randomizer
+          and a random number picker.
         </p>
         <div class="mb-2 mr-2 flex justify-end">
           <button
             id="repoButton4"
-            data-link="https://github.com/CaptainPandaMonkey5/Random_Picker"
-            class="ease cursor-pointer overflow-hidden rounded-lg bg-white px-2 py-2 text-sm shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+            data-link="https://github.com/CaptainPandaMonkey5/RandomPicker"
+            class="ease mr-2 cursor-pointer overflow-hidden rounded-lg bg-success px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
           >
             Repository
           </button>
-          <script>
-            document
-              .getElementById("repoButton4")
-              .addEventListener("click", function () {
-                var randomPicker_link = this.getAttribute("data-link");
-                window.open(randomPicker_link, "_blank");
-              });
-          </script>
+          <button
+            id="webButton1"
+            data-link="https://captainpandamonkey5.github.io/RandomPicker/"
+            class="ease cursor-pointer overflow-hidden rounded-lg bg-success px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
+          >
+            RandomPicker
+          </button>
         </div>
       </div>
     </article>
 
-    <footer class="text-beige py-5">
-      <div class="container mx-auto flex flex-wrap justify-around px-4">
-        <div class="mb-4 w-full text-center sm:mb-0 sm:w-auto sm:text-left">
-          <p class="text-lg">&copy; 2024 CaptainPandaMonkey</p>
-        </div>
-      </div>
+    <footer class="footer footer-center mt-5 p-10 text-white">
+      <aside>
+        <p class="font-bold">CaptainPandaMonkey</p>
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
     </footer>
   </body>
 </html>

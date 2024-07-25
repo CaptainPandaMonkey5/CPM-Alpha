@@ -5,5 +5,12 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: ["prettier-plugin-css-order", "prettier-plugin-tailwindcss"],
+  daisyui: {
+    themes: ["light", "sunset"],
+  },
+  plugins: [
+    "prettier-plugin-css-order",
+    "prettier-plugin-tailwindcss",
+    require("daisyui"),
+  ],
 };

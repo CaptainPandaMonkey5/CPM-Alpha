@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
@@ -19,6 +24,7 @@
           background-image: url("assets/bg-image/circle-scatter-haikei-1820x1080.svg");
           background-repeat: no-repeat;
           background-size: cover;
+          background-attachment: fixed;
         }
       }
 
@@ -39,7 +45,7 @@
   <body class="bg-circle-full">
     <nav
       x-data="{ open: false }"
-      class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-gray-800 px-4 py-3 text-white shadow-xl lg:flex-row"
+      class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-neutral px-4 py-3 text-white shadow-xl lg:flex-row"
     >
       <div class="flex w-full items-center justify-between p-2 lg:w-auto">
         <div class="flex items-center">
@@ -48,7 +54,7 @@
             alt="Logo"
             class="mr-2 h-8 w-8"
           />
-          <h1 class="mr-6 font-mono text-lg font-semibold">
+          <h1 class="mr-7 font-mono text-lg font-semibold">
             CaptainPandaMonkey
           </h1>
         </div>
@@ -140,7 +146,7 @@
     <div
       class="mx-auto flex min-h-screen items-center justify-center text-white"
     >
-      <div class="m-8 max-w-2xl rounded-lg bg-gray-800 p-8 shadow-lg">
+      <div class="m-4 max-w-2xl rounded-lg bg-neutral p-8 shadow-lg">
         <div class="mb-4 flex items-center">
           <img
             class="animate-spin-slow mr-4 h-16 w-16 rounded-full"
@@ -162,7 +168,7 @@
           Let's connect and build something incredible together!
         </p>
         <button
-          class="transform rounded-full bg-white px-4 py-2 text-black transition-transform duration-300 hover:rotate-6"
+          class="btn transform rounded-full bg-white px-4 py-2 text-black transition-transform duration-300 hover:rotate-6 hover:bg-gray-500 hover:text-white"
           onclick="window.open('https://github.com/CaptainPandaMonkey5', '_blank')"
         >
           Connect with Me
@@ -170,12 +176,11 @@
       </div>
     </div>
 
-    <footer class="py-5 text-white">
-      <div class="container mx-auto flex flex-wrap justify-around px-4">
-        <div class="mb-4 w-full text-center sm:mb-0 sm:w-auto sm:text-left">
-          <p class="text-lg">&copy; 2024 CaptainPandaMonkey</p>
-        </div>
-      </div>
+    <footer class="footer footer-center p-10 text-white">
+      <aside>
+        <p class="font-bold">CaptainPandaMonkey</p>
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
     </footer>
   </body>
 </html>
