@@ -33,3 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
     window.open(randomPickerWeb_link, "_blank");
   });
 });
+
+document.addEventListener("scroll", function () {
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("fixed", "top-0", "w-full", "z-50", "max-w-7xl");
+  } else {
+    navbar.classList.remove("fixed", "top-0", "w-full", "z-50", "max-w-7xl");
+  }
+});

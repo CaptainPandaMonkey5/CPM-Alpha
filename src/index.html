@@ -9,6 +9,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
@@ -21,7 +22,7 @@
     <style>
       @layer utilities {
         .bg-circle-full {
-          background-image: url("assets/bg-image/circle-scatter-haikei.png");
+          background-image: url("assets/bg-image/circle-scatter-haikei-1820x1080.svg");
           background-repeat: no-repeat;
           background-size: cover;
           background-attachment: fixed;
@@ -32,8 +33,9 @@
   </head>
   <body class="bg-circle-full">
     <nav
+      id="navbar"
       x-data="{ open: false }"
-      class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-neutral px-4 py-3 text-white shadow-xl lg:flex-row"
+      class="fixed left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-neutral px-4 py-3 text-white shadow-xl lg:flex-row"
     >
       <div class="flex w-full items-center justify-between p-2 lg:w-auto">
         <div class="flex items-center">
