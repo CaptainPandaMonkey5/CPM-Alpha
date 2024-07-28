@@ -11,6 +11,6 @@ module.exports = {
   plugins: [
     "prettier-plugin-css-order",
     "prettier-plugin-tailwindcss",
-    require("daisyui"),
+    require('daisyui'),
   ],
 };
