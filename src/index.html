@@ -1,10 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="sunset" class="bg-circle-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="script.js"></script>
     <link
       rel="icon"
       type="image/x-icon"
@@ -13,19 +19,23 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <base href="https://captainpandamonkey5.github.io/CPM-Alpha/src/" />
     <title>CaptainPandaMonkey</title>
-    <style type="text/tailwindcss">
+    <style>
       @layer utilities {
-        .content-auto {
-          content-visibility: auto;
+        .bg-circle-full {
+          background-image: url("assets/bg-image/circle-scatter-haikei-1820x1080.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
         }
       }
     </style>
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
-  <body>
+  <body class="bg-circle-full">
     <nav
+      id="navbar"
       x-data="{ open: false }"
-      class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-gray-800 px-4 py-3 text-white shadow-xl lg:flex-row"
+      class="fixed left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-neutral px-4 py-3 text-white shadow-xl lg:flex-row"
     >
       <div class="flex w-full items-center justify-between p-2 lg:w-auto">
         <div class="flex items-center">
@@ -34,7 +44,7 @@
             alt="Logo"
             class="mr-2 h-8 w-8"
           />
-          <h1 class="mr-6 font-mono text-lg font-semibold">
+          <h1 class="mr-8 font-mono text-lg font-semibold">
             CaptainPandaMonkey
           </h1>
         </div>
@@ -85,11 +95,11 @@
           class="block rounded p-2 hover:bg-[#3f3f3f] md:inline-block"
           >Portfolio</a
         >
-        <!-- <a
+        <a
           href="about.html"
           class="block rounded p-2 hover:bg-[#3f3f3f] md:inline-block"
           >About</a
-        > -->
+        >
       </div>
 
       <div class="hidden items-center space-x-2 md:flex">
@@ -124,12 +134,62 @@
       </div>
     </nav>
 
-    <footer class="text-beige py-5">
-      <div class="container mx-auto flex flex-wrap justify-around px-4">
-        <div class="mb-4 w-full text-center sm:mb-0 sm:w-auto sm:text-left">
-          <p class="text-lg">&copy; 2024 CaptainPandaMonkey</p>
+    <div class="carousel mx-auto mt-20 w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer footer-center p-10 text-white">
+      <aside>
+        <p class="font-bold">CaptainPandaMonkey</p>
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
     </footer>
   </body>
 </html>

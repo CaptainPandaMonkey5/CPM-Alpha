@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="sunset">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,8 +9,13 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="404.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,700"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/x-icon"
@@ -26,18 +31,6 @@
           background-repeat: no-repeat;
           background-size: cover;
           background-attachment: fixed;
-        }
-      }
-
-      .animate-spin-slow {
-        animation: spin 10s linear infinite;
-      }
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
         }
       }
     </style>
@@ -56,7 +49,7 @@
             alt="Logo"
             class="mr-2 h-8 w-8"
           />
-          <h1 class="mr-7 font-mono text-lg font-semibold">
+          <h1 class="mr-8 font-mono text-lg font-semibold">
             CaptainPandaMonkey
           </h1>
         </div>
@@ -145,36 +138,18 @@
         </a>
       </div>
     </nav>
-    <div
-      class="mx-auto flex min-h-screen items-center justify-center text-white"
-    >
-      <div class="m-4 max-w-2xl rounded-lg bg-neutral p-8 shadow-lg">
-        <div class="mb-4 flex items-center">
-          <img
-            class="animate-spin-slow mr-4 h-16 w-16 rounded-full"
-            src="assets/images/Commission 3.png"
-            alt="Profile Image"
-          />
-          <h1 class="text-4xl font-extrabold">About Me</h1>
+
+    <div id="notfound">
+      <div class="notfound">
+        <div class="notfound-404">
+          <h1>4<span></span>4</h1>
         </div>
-        <p class="mb-4 text-lg">
-          I'm an aspiring Full Stack Developer with a passion for creating
-          diverse web experiences. I have a solid foundation in HTML, CSS, and
-          PHP, with proficiency in frameworks like Laravel.
+        <h2>Oops! Page Not Found</h2>
+        <p>
+          Sorry but the page you are looking for does not exist, have been
+          removed, name has changed or is temporarily unavailable.
         </p>
-        <p class="mb-4 text-lg">
-          I have worked on several small projects, and my GitHub showcases some
-          of my recent work.
-        </p>
-        <p class="mb-4 text-lg">
-          Let's connect and build something incredible together!
-        </p>
-        <button
-          class="btn transform rounded-full bg-white px-4 py-2 text-black transition-transform duration-300 hover:rotate-6 hover:bg-gray-500 hover:text-white"
-          onclick="window.open('https://github.com/CaptainPandaMonkey5', '_blank')"
-        >
-          Connect with Me
-        </button>
+        <a href="index.html">Back to homepage</a>
       </div>
     </div>
 

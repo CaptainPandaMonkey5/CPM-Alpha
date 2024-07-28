@@ -43,3 +43,9 @@
   transform-origin: left;
   transform: rotateZ(-45deg) translate(-5px, 5px);
 }
+
+.bg-circle-full {
+  background-image: url("assets/bg-image/circle-scatter-haikei-1820x1080.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
