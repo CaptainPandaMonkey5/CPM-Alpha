@@ -47,7 +47,7 @@
     <nav
       id="navbar"
       x-data="{ open: false }"
-      class="fixed left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-neutral px-4 py-3 text-white shadow-xl lg:flex-row"
+      class="bg-neutral fixed left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl px-4 py-3 text-white shadow-xl lg:flex-row"
     >
       <div class="flex w-full items-center justify-between p-2 lg:w-auto">
         <div class="flex items-center">
@@ -148,7 +148,7 @@
     <div
       class="mx-auto flex min-h-screen items-center justify-center text-white"
     >
-      <div class="m-4 max-w-2xl rounded-lg bg-neutral p-8 shadow-lg">
+      <div class="bg-neutral m-4 max-w-2xl rounded-lg p-8 shadow-lg">
         <div class="mb-4 flex items-center">
           <img
             class="animate-spin-slow mr-4 h-16 w-16 rounded-full"
@@ -178,11 +178,13 @@
       </div>
     </div>
 
-    <footer class="footer footer-center p-10 text-white">
-      <aside>
-        <p class="font-bold">CaptainPandaMonkey</p>
-        <p>Copyright © 2024 - All right reserved</p>
-      </aside>
-    </footer>
+    <div class="fixed bottom-0 left-0 w-full">
+      <footer class="footer footer-center p-10 text-white">
+        <aside>
+          <p class="font-bold">CaptainPandaMonkey</p>
+          <p>Copyright © 2024 - All right reserved</p>
+        </aside>
+      </footer>
+    </div>
   </body>
 </html>
