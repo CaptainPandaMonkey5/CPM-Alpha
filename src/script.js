@@ -44,3 +44,18 @@ document.addEventListener("scroll", function () {
     navbar.classList.remove("fixed", "top-0", "w-full", "z-50", "max-w-7xl");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const starProjectGH = document.getElementById("starProjectGH");
+  const starProjectWeb = document.getElementById("starProjectWeb");
+
+  starProjectGH.addEventListener("click", function () {
+    var starProjectGH_link = this.getAttribute("data-link");
+    window.open(starProjectGH_link, "_blank");
+  });
+
+  starProjectWeb.addEventListener("click", function () {
+    var starProjectWeb_link = this.getAttribute("data-link");
+    window.open(starProjectWeb_link, "_blank");
+  });
+});
