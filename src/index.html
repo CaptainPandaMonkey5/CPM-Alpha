@@ -35,7 +35,7 @@
     <nav
       id="navbar"
       x-data="{ open: false }"
-      class="bg-neutral fixed left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl px-4 py-3 text-white shadow-xl lg:flex-row"
+      class="fixed left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-7xl flex-col items-center justify-between rounded-bl-2xl rounded-br-2xl bg-neutral px-4 py-3 text-white shadow-xl lg:flex-row"
     >
       <div class="flex w-full items-center justify-between p-2 lg:w-auto">
         <div class="flex items-center">
@@ -133,95 +133,6 @@
         </a>
       </div>
     </nav>
-
-    <article
-      class="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-4 pt-10 md:grid-cols-2"
-    >
-      <div class="bg-base-300 m-8 rounded-xl border-2 p-1">
-        <h2 class="m-3 text-lg font-semibold text-white">Learn with Panda</h2>
-        <p class="m-3 text-white">
-          This small project, inspired by cs.fyi and based on the roadmap.sh
-          roadmap for Full Stack Developers, is designed to provide a
-          comprehensive overview of essential full stack development skills.
-          Currently in progress.
-        </p>
-        <div class="mb-2 mr-2 flex justify-end">
-          <button
-            id="repoButton1"
-            data-link="https://github.com/CaptainPandaMonkey5/Learn_With_Panda"
-            class="ease btn-disabled bg-success cursor-pointer overflow-hidden rounded-lg px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
-          >
-            Repository
-          </button>
-        </div>
-      </div>
-
-      <div class="bg-base-300 m-8 overflow-hidden rounded-xl border-2 p-1">
-        <h2 class="m-3 text-lg font-semibold text-white">CPM-Alpha</h2>
-        <p class="m-3 text-white">
-          This portfolio website highlights the creator's recent projects and
-          other relevant information. As the site is still under development,
-          visitors will be redirected to the project's repository for the latest
-          updates.
-        </p>
-        <div class="mb-2 mr-2 flex justify-end">
-          <button
-            id="repoButton2"
-            data-link="https://github.com/CaptainPandaMonkey5/CPM-Alpha"
-            class="ease bg-success cursor-pointer overflow-hidden rounded-lg px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
-          >
-            Repository
-          </button>
-        </div>
-      </div>
-
-      <div class="border- bg-base-300 m-8 rounded-xl border-2 p-1">
-        <h2 class="m-3 text-lg font-semibold text-white">
-          AJC Bike Shop POST Website
-        </h2>
-        <p class="m-3 text-white">
-          This website, created as the final course output for a Free Elective
-          Web Development group project, focuses on a Point of Sale (POS)
-          system. It features an intuitive interface for managing sales
-          transactions, including inventory management and sales reporting.
-        </p>
-        <div class="mb-2 mr-2 flex justify-end">
-          <button
-            id="repoButton3"
-            data-link="https://github.com/CaptainPandaMonkey5/FEL_FCO/tree/main"
-            class="ease bg-success cursor-pointer overflow-hidden rounded-lg px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
-          >
-            Repository
-          </button>
-        </div>
-      </div>
-
-      <div class="border- bg-base-300 m-8 rounded-xl border-2 p-1">
-        <h2 class="m-3 text-lg font-semibold text-white">RandomPicker</h2>
-        <p class="m-3 text-white">
-          RandomPicker is a tool developed to help users randomly select games
-          by their names, but it can be used for any list of items. The
-          application now includes additional features such as a list randomizer
-          and a random number picker.
-        </p>
-        <div class="mb-2 mr-2 flex justify-end">
-          <button
-            id="repoButton4"
-            data-link="https://github.com/CaptainPandaMonkey5/RandomPicker"
-            class="ease bg-success mr-2 cursor-pointer overflow-hidden rounded-lg px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
-          >
-            Repository
-          </button>
-          <button
-            id="webButton1"
-            data-link="https://captainpandamonkey5.github.io/RandomPicker/"
-            class="ease bg-success cursor-pointer overflow-hidden rounded-lg px-2 py-2 text-sm text-black shadow-md shadow-slate-400 transition duration-300 ease-in-out hover:bg-[#ccc] hover:shadow-sm"
-          >
-            Website
-          </button>
-        </div>
-      </div>
-    </article>
 
     <div class="fixed bottom-0 left-0 w-full">
       <footer class="footer footer-center p-10 text-white">
